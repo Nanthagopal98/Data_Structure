@@ -44,6 +44,32 @@ namespace dataStructure
                 }
             }
         }
-        
+        public void peak()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                Console.WriteLine(top.data + " is a Peak Value");
+            }
+        }
+        public void pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                while (this.top != null)
+                {
+                    Console.WriteLine(top.data + " is a Removed");
+                    this.top = top.next;
+                }
+            }
+        }
+
     }
 }

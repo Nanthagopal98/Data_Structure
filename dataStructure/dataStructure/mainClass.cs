@@ -80,21 +80,36 @@ namespace dataStructure
                     }
                     break;
                 case 2:
-                    //dataStructure.linkedListStack runStack = new linkedListStack();
                     linkedListStack linkListstack = new linkedListStack();
-                    linkListstack.addStack(70);
-                    linkListstack.addStack(30);
-                    linkListstack.addStack(56);
-                    linkListstack.display();
-                    
+                    Console.WriteLine("1 to Create Simple Stack and Find Peak");
+                    Console.WriteLine("2 to Create Simple Stack and Perform Peak and Pop");
+                    int selectStack = Convert.ToInt32(Console.ReadLine());
+                    switch (selectStack)
+                    {
+                        case 1:
+                            linkListstack.addStack(70);
+                            linkListstack.addStack(30);
+                            linkListstack.addStack(56);
+                            linkListstack.display();
+                            linkListstack.peak();
+                            break;
+                        case 2:
+                            linkListstack.addStack(70);
+                            linkListstack.addStack(30);
+                            linkListstack.addStack(56);
+                            linkListstack.display();
+                            Console.WriteLine("--------------------");
+                            linkListstack.peak();
+                            Console.WriteLine("--------------------");
+                            linkListstack.pop();
+                            Console.WriteLine("--------------------");
+                            linkListstack.display();
+                            break;
+                    }
                     break;
             
-                    
-
-
-            }
-           
             
+            }                       
         }
     }
 }
