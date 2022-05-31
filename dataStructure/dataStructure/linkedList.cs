@@ -13,7 +13,7 @@ namespace dataStructure
         public void add(int data)
         {
             node node = new node(data);
-            if(this.head == null)
+            if (this.head == null)
             {
                 this.head = node;
             }
@@ -26,7 +26,7 @@ namespace dataStructure
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} is inserted in to linked list",node.data);
+            Console.WriteLine("{0} is inserted in to linked list", node.data);
         }
         public void swapValues(int data)
         {
@@ -78,7 +78,7 @@ namespace dataStructure
             Console.WriteLine("{0} inserted into LinkedList", node.id);
         }*/
         public void insertNodeInbetween(int position, int data)
-        {   
+        {
             int check = 1;
             node newNode = new node(data);
             if (position == 1)
@@ -98,14 +98,38 @@ namespace dataStructure
                         temp.next = newNode;
                         break;
                     }
-                    
+
                     temp = temp.next;
-                }               
+                }
             }
         }
         public void removeFirst()
         {
+            if (this.head == null)
+            {
+                Console.WriteLine("List Empty");
+            }
             this.head = this.head.next;
-        }  
+        }
+        public void removeLastValue()
+        {            
+            node temp = head;
+            if (this.head == null)
+            {
+                Console.WriteLine("List Empty");
+            }
+            if (temp.next == null)
+            {
+                this.head = null;
+            }           
+            else
+            {
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = null;
+            }
+        }
     }
 }

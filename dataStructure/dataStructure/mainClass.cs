@@ -18,6 +18,7 @@ namespace dataStructure
             Console.WriteLine("3 to Perform Append");
             Console.WriteLine("4 to Insert Value");
             Console.WriteLine("5 to Remove First Value");
+            Console.WriteLine("6 to Remove Last Value");
             int select = Convert.ToInt32(Console.ReadLine());
             switch (select)
             {
@@ -59,7 +60,18 @@ namespace dataStructure
                     Console.WriteLine("After Remove First Value");
                     list.display();
                     break;
-                    
+                case 6:
+                    list.add(56);
+                    list.add(30);
+                    list.add(70);
+                    Console.WriteLine("--------------------");
+                    Console.WriteLine("Values Present in List");
+                    list.display();
+                    list.removeLastValue();
+                    Console.WriteLine("After Remove Last Value");
+                    list.display();
+                    break;
+
             }
            
             
