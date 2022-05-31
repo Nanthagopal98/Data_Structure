@@ -8,11 +8,11 @@ namespace dataStructure
 {
     internal class node
     {
-        public int id;
+        public int data;
         public node next;
-        public node(int id)
+        public node(int data)
         {
-            this.id = id;
+            this.data = data;
         }
     }
 }
