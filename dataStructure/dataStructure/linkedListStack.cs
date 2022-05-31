@@ -9,6 +9,7 @@ namespace dataStructure
     internal class linkedListStack
     {
         public node top;
+        public node next;
         public linkedListStack()
         {
             this.top = null;
