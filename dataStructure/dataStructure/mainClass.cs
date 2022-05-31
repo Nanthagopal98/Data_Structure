@@ -85,6 +85,7 @@ namespace dataStructure
                     Console.WriteLine("1 to Create Simple Stack and Find Peak");
                     Console.WriteLine("2 to Create Simple Stack and Perform Peak and Pop");
                     Console.WriteLine("3 to Create Simple Queue");
+                    Console.WriteLine("4 to Create Simple Queue and Dequeue");
                     int selectStack = Convert.ToInt32(Console.ReadLine());
                     switch (selectStack)
                     {
@@ -113,6 +114,15 @@ namespace dataStructure
                             linkListqueue.queue(70);
                             linkListqueue.display();
                             break;
+                        case 4:
+                            linkListqueue.queue(56);
+                            linkListqueue.queue(30);
+                            linkListqueue.queue(70);
+                            linkListqueue.display();
+                            linkListqueue.deQueue();
+                            linkListqueue.display();
+                            break;
+                          
                     }
                     break;
                     

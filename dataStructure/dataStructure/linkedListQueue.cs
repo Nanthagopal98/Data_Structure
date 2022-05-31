@@ -47,5 +47,20 @@ namespace dataStructure
                 }
             }
         }
+        public void deQueue()
+        {
+            if (this.first == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            else
+            {
+                while (this.first != null)
+                {
+                    Console.WriteLine(first.data + " is a Removed");
+                    this.first = first.next;
+                }
+            }
+        }
     }
 }
