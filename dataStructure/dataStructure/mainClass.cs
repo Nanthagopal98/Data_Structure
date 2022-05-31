@@ -35,9 +35,9 @@ namespace dataStructure
                     list.display();
                     break;
                 case 3:
-                    list.swapValues(56);
-                    list.swapValues(30);
-                    list.swapValues(70);
+                    list.add(56);
+                    list.add(30);
+                    list.add(70);
                     list.display();
                     break;
                 case 4:

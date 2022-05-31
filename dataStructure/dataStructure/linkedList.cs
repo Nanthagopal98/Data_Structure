@@ -59,7 +59,7 @@ namespace dataStructure
                 }
             }
         }
-        /*public void Append(int data)
+        public void Append(int data)
         {
             node node = new node(data);
             if (this.head == null)
@@ -75,8 +75,8 @@ namespace dataStructure
                 }
                 position.next = node;
             }
-            Console.WriteLine("{0} inserted into LinkedList", node.id);
-        }*/
+            Console.WriteLine("{0} inserted into LinkedList", node.data);
+        }
         public void insertNodeInbetween(int position, int data)
         {
             int check = 1;
